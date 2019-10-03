@@ -6,6 +6,8 @@
 
 	<link rel="stylesheet" type="text/css" href="home.css">
 
+
+	<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 	<meta charset="utf-8">
@@ -15,7 +17,9 @@
 </head>
 
 <style>
+
 .mySlides {display:none;}
+
 </style>
 
 <body>
@@ -34,7 +38,7 @@
 
 		<a href="home.html">Home</a>
 
-		<a href="shop.html">Shop Item</a>
+		<a href="shop.html">List Game</a>
 
 		<a href="login.html">login</a>
 
@@ -46,64 +50,40 @@
 
 	<center>
 
-            <h1>Recommended Game</h1>
-
 	
+            <h1>New Game In 2019</h1>
+	<fieldset>	
+
 	<div class="w3-content w3-display-container">
 
-  		<img class="mySlides" src="img/darksoulsIII.png" style="width:50%">
+  		<img class="mySlides" src="img/farcry5.png" width="450px" height="600px">
 
-  		<img class="mySlides" src="img\detroit.jpg" style="width:100%">
+  		<img class="mySlides" src="img/cat.jpg" width="450px" height="600px" >
 
-  		<img class="mySlides" src="img/godofwar4.jpg" style="width:50%">
+  		<img class="mySlides" src="img/hsh.jpg" width="450px" height="600px">
 
-  		<img class="mySlides" src="img/ffxv.jpg" style="width:50%">
-
-
-  		<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
- 
- 		<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  		<img class="mySlides" src="img/watchdogs2.jpg" width="420px" height="600px">
 
 
-		</div>
+  		</div>
 
 	</div>
 
 <script>
 
+var myIndex = 0;
+carousel();
 
-var slideIndex = 1;
-
-showDivs(slideIndex);
-
-
-
-function plusDivs(n) {
- 
- showDivs(slideIndex += n);
-
-}
-
-
-
-function showDivs(n) {
- 
- var i;
- 
- var x = document.getElementsByClassName("mySlides");
- 
- if (n > x.length) {slideIndex = 1}
- 
- if (n < 1) {slideIndex = x.length}
-  
-for (i = 0; i < x.length; i++) {
-
-    x[i].style.display = "none"; 
- 
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
   }
- 
- x[slideIndex-1].style.display = "block"; 
- 
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>
 

@@ -1,123 +1,248 @@
 #img{
+
     border-radius: 10px;
-    width : auto;
-}
+
+    width : 100%}
+
+
 #icon{
+
     text-align: left;
+
    margin-top: 40px;
+
    margin-left: 40px;
+
    position: inherit;
+
    
     position:absolute;
+
     z-index:2;
+
 }
+
+
 body{
+
     background-color: #5fa4ea;
+
 }
+
+
 #menu{
+
      list-style-type: none;
+
      margin: 0;
+
      padding: 10px;
+
      overflow: hidden;
+
      text-align: center;
+
      margin-left: auto;
+
      margin-right: auto;
+
      background-color: black;
+
      border-radius: 10px;
+
 }
+
+
 #menu a{
+
      float: left;
-     padding: 0.09999%;
+ 
+    padding: 0.09999%;
+
      width: 24.77%;
+
      margin-left: auto;
-     margin-right: auto;
+ 
+    margin-right: auto;
+
      font-size: 24px;
+
  text-decoration: none;
+
 }
+
+
 #regis a {
+
     display: block;
+
     padding: 2% 30%;
+
     text-decoration: none;
+
     color: blue;
+
     padding: 5px;
+
 }
+
+
 
 #into{
+
     text-align: left;
+
     font-size: 10px;
+
     background-color: black;
-    color: white;
-    margin-right: 55%;
-    font-size: 15px;
-    border: 3px white solid;
-    padding: 10px;
-    margin-top: 5px;
+ 
+   color: white;
+ 
+   margin-right: 55%;
+ 
+   font-size: 15px;
+ 
+   border: 3px white solid;
+ 
+   padding: 10px;
+ 
+   margin-top: 5px;
+
 }
+
+
 /* unvisited link */
+
+
 #menu a:link {
+
     color: red;
+
 }
+
+
 
 /* visited link */
+
 #menu a:visited {
-     color: white;
+ 
+    color: white;
+
 }
+
+
 
 /* mouse over link */
+
 #menu a:hover {
+
     background-color: lime;
+
     border-radius: 10px;
+
     padding: 2px;
+
 }
 
+
+
 /* selected link */
+
 #menu a:active {
-    color: blue;
+  
+  color: blue;
+
 }
+
+
 
 
 #aside-right {
-    background-color: rgb(168, 168, 168);
+  
+  background-color: rgb(168, 168, 168);
+
     height: 500px;
+
     width: 25%;
+
     float: right;
-    border-radius: 20px;
+  
+  border-radius: 20px;
+
     margin-top: 10px;
-}
-#login{
-    padding-top: 10px;
-    margin-left: 15px;
+
 }
 
-#Commend {
-    padding-left: 10%;
+#login
+{
+    padding-top: 10px;
+ 
+   margin-left: 15px;
+
 }
+
+
+
+#Commend {
+  
+  padding-left: 10%;
+
+}
+
+
 
 #fieldform {
     padding-left: 25%;
+
     margin-top: 5%;
+
+
 }
 
 #but {
-    padding-left: 18%;
+  
+  padding-left: 18%;
+
 }
 
+
 #but input {
+
+    font-size: 20px;
+  
+  padding: 5px;
+  
+  border-radius: 3px;
+  
+  margin-right: 20px;
+   
+ background-color: lime;
+
+}
+
+
+#regis {
+ 
+   margin-left: 79px;
+
+}
+
+
+
+#butregis {
+
+    margin-left: 82px;
+
+
+}
+#map {
+     margin-top: 1%;
+     border: 5px solid #000000;
+ }
+#but button {
     font-size: 20px;
     padding: 5px;
     border-radius: 3px;
     margin-right: 20px;
     background-color: lime;
 }
-
-#regis {
-    margin-left: 79px;
-}
-
-#butregis {
-    margin-left: 82px;
-}
-#map {
-     margin-top: 1%;
-     border: 5px solid #000000;
- }
