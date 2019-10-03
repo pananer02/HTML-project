@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<link rel="stylesheet" type="text/css" href="home.css">
+
+
+	<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<meta charset="utf-8">
+
+	<title>Review Game by XD</title>
+
+</head>
+
+<style>
+
+.mySlides {display:none;}
+
+</style>
+
+<body>
+
+<div id="page">
+
+	<div id="header">
+
+        		<img src="img/icon.png" alt="icon"  height="200 px" id="icon">
+
+		<img src="img/background.jpg" alt="background" height="300px" id="img">
+
+	</div>
+
+	<div id="menu">
+
+		<a href="index.html">Home</a>
+
+		<a href="shop.html">List Game</a>
+
+		<a href="login.html">login</a>
+
+		<a href="register.html">register</a>
+
+	</div>
+	
+<div id="main">
+
+	<center>
+
+	
+            <h1>New Game In 2019</h1>
+	<fieldset>	
+
+	<div class="w3-content w3-display-container">
+
+  		<img class="mySlides" src="img/farcry5.png" width="450px" height="600px">
+
+  		<img class="mySlides" src="img/cat.jpg" width="450px" height="600px" >
+
+  		<img class="mySlides" src="img/hsh.jpg" width="450px" height="600px">
+
+  		<img class="mySlides" src="img/watchdogs2.jpg" width="420px" height="600px">
+
+
+  		</div>
+
+	</div>
+
+<script>
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<a href="ref.html"><img src="img/ref.png" style="float:right" width="100" height="50"></a>
+<a href="about.html"><img src="img/about.png" style="float:right" width="100" height="50"></a>
+</body>
+
+</html>
